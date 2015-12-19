@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     var isTypingNumber = false
     var result = Int()
     var operation = ""
+    var historyItems = [String]()
 
     @IBAction func number(sender: AnyObject) {
         let number = sender.currentTitle
@@ -45,6 +46,8 @@ class ViewController: UIViewController {
             result = firstNumber / secondNumber
         }
         screen.text = "\(result)"
+        
+        historyItems.insert("\(firstNumber) \(operation) \(secondNumber) = \(result)", atIndex:0)
     }
     
     @IBAction func clear(sender: AnyObject) {
@@ -64,7 +67,5 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
