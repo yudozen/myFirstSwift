@@ -47,7 +47,8 @@ class ViewController: UIViewController {
         }
         screen.text = "\(result)"
         
-        historyItems.insert("\(firstNumber) \(operation) \(secondNumber) = \(result)", atIndex:0)
+        let history = "\(firstNumber) \(operation) \(secondNumber) = \(result)"
+        ModelHistory.sharedInstance.add(["item": history])
     }
     
     @IBAction func clear(sender: AnyObject) {

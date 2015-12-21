@@ -8,21 +8,13 @@
 
 import UIKit
 
-protocol TabBarControllerDelegate {
-    func setHistory(historyItems:[String])
-}
-
 class TabBarController: UITabBarController, UITabBarControllerDelegate{
 
     func tabBarController(tabBarController: UITabBarController, didSelectViewController viewController: UIViewController) {
-        if viewController is TabBarControllerDelegate {
-            (viewController as! TabBarControllerDelegate).setHistory((self.viewControllers?.first as! ViewController).historyItems)
-        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.delegate = self
     }
     
     override func didReceiveMemoryWarning() {

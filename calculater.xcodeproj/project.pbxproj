@@ -15,6 +15,16 @@
 		4093B1001C1732E300991C5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4093B0FE1C1732E300991C5D /* LaunchScreen.storyboard */; };
 		4093B10B1C1732E400991C5D /* calculaterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4093B10A1C1732E400991C5D /* calculaterTests.swift */; };
 		4093B1161C1732E400991C5D /* calculaterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4093B1151C1732E400991C5D /* calculaterUITests.swift */; };
+		C309E5F51C26F7CA00569FB9 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = C309E5EB1C26F7CA00569FB9 /* FMDatabase.m */; };
+		C309E5F61C26F7CA00569FB9 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C309E5ED1C26F7CA00569FB9 /* FMDatabaseAdditions.m */; };
+		C309E5F71C26F7CA00569FB9 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = C309E5EF1C26F7CA00569FB9 /* FMDatabasePool.m */; };
+		C309E5F81C26F7CA00569FB9 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = C309E5F11C26F7CA00569FB9 /* FMDatabaseQueue.m */; };
+		C309E5F91C26F7CA00569FB9 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = C309E5F41C26F7CA00569FB9 /* FMResultSet.m */; };
+		C3B09E481C283444008A8A3C /* ModelBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B09E471C283444008A8A3C /* ModelBase.swift */; };
+		C3B09E4B1C28360D008A8A3C /* ModelHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B09E4A1C28360D008A8A3C /* ModelHistory.swift */; };
+		C3C0A4D31C255341001A6501 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C0A4D21C255341001A6501 /* TableViewController.swift */; };
+		C3C0A4D51C257C21001A6501 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C0A4D41C257C21001A6501 /* TabBarController.swift */; };
+		DA366364CEFD147862BCB8A6 /* Pods_calculater.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EE787F0B1A471EDB94094DD /* Pods_calculater.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +59,25 @@
 		4093B1111C1732E400991C5D /* calculaterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = calculaterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4093B1151C1732E400991C5D /* calculaterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculaterUITests.swift; sourceTree = "<group>"; };
 		4093B1171C1732E400991C5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EE787F0B1A471EDB94094DD /* Pods_calculater.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_calculater.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C309E5E91C26F58300569FB9 /* calculater-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "calculater-Bridging-Header.h"; sourceTree = "<group>"; };
+		C309E5EA1C26F79C00569FB9 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = Pods/FMDB/src/fmdb/FMDatabase.h; sourceTree = SOURCE_ROOT; };
+		C309E5EB1C26F7CA00569FB9 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = Pods/FMDB/src/fmdb/FMDatabase.m; sourceTree = SOURCE_ROOT; };
+		C309E5EC1C26F7CA00569FB9 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = Pods/FMDB/src/fmdb/FMDatabaseAdditions.h; sourceTree = SOURCE_ROOT; };
+		C309E5ED1C26F7CA00569FB9 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = Pods/FMDB/src/fmdb/FMDatabaseAdditions.m; sourceTree = SOURCE_ROOT; };
+		C309E5EE1C26F7CA00569FB9 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = Pods/FMDB/src/fmdb/FMDatabasePool.h; sourceTree = SOURCE_ROOT; };
+		C309E5EF1C26F7CA00569FB9 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = Pods/FMDB/src/fmdb/FMDatabasePool.m; sourceTree = SOURCE_ROOT; };
+		C309E5F01C26F7CA00569FB9 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = Pods/FMDB/src/fmdb/FMDatabaseQueue.h; sourceTree = SOURCE_ROOT; };
+		C309E5F11C26F7CA00569FB9 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = Pods/FMDB/src/fmdb/FMDatabaseQueue.m; sourceTree = SOURCE_ROOT; };
+		C309E5F21C26F7CA00569FB9 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = Pods/FMDB/src/fmdb/FMDB.h; sourceTree = SOURCE_ROOT; };
+		C309E5F31C26F7CA00569FB9 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = Pods/FMDB/src/fmdb/FMResultSet.h; sourceTree = SOURCE_ROOT; };
+		C309E5F41C26F7CA00569FB9 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = Pods/FMDB/src/fmdb/FMResultSet.m; sourceTree = SOURCE_ROOT; };
+		C3B09E471C283444008A8A3C /* ModelBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelBase.swift; sourceTree = "<group>"; };
+		C3B09E4A1C28360D008A8A3C /* ModelHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelHistory.swift; sourceTree = "<group>"; };
+		C3C0A4D21C255341001A6501 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		C3C0A4D41C257C21001A6501 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		D2B74F82285E95D7FF07832F /* Pods-calculater.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calculater.debug.xcconfig"; path = "Pods/Target Support Files/Pods-calculater/Pods-calculater.debug.xcconfig"; sourceTree = "<group>"; };
+		D78EFCA48DDA4FAF5BF12E4E /* Pods-calculater.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calculater.release.xcconfig"; path = "Pods/Target Support Files/Pods-calculater/Pods-calculater.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA366364CEFD147862BCB8A6 /* Pods_calculater.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +113,8 @@
 				4093B1091C1732E400991C5D /* calculaterTests */,
 				4093B1141C1732E400991C5D /* calculaterUITests */,
 				4093B0F01C1732E300991C5D /* Products */,
+				A792DE6B035A76F7FF1CF2FE /* Pods */,
+				7690CFFB7C8D84142825F74C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +131,15 @@
 		4093B0F11C1732E300991C5D /* calculater */ = {
 			isa = PBXGroup;
 			children = (
+				C3B09E4D1C283FAF008A8A3C /* Controllers */,
+				C3B09E4C1C2839F6008A8A3C /* Views */,
+				C3B09E491C2835E1008A8A3C /* Models */,
+				C3B09E461C282F88008A8A3C /* fmdb */,
 				4093B0F21C1732E300991C5D /* AppDelegate.swift */,
-				4093B0F41C1732E300991C5D /* ViewController.swift */,
-				4093B0F61C1732E300991C5D /* Main.storyboard */,
 				4093B0FC1C1732E300991C5D /* Assets.xcassets */,
-				4093B0FE1C1732E300991C5D /* LaunchScreen.storyboard */,
 				4093B1011C1732E300991C5D /* Info.plist */,
 				4093B0F91C1732E300991C5D /* calculater.xcdatamodeld */,
+				C309E5E91C26F58300569FB9 /* calculater-Bridging-Header.h */,
 			);
 			path = calculater;
 			sourceTree = "<group>";
@@ -128,6 +162,69 @@
 			path = calculaterUITests;
 			sourceTree = "<group>";
 		};
+		7690CFFB7C8D84142825F74C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4EE787F0B1A471EDB94094DD /* Pods_calculater.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A792DE6B035A76F7FF1CF2FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2B74F82285E95D7FF07832F /* Pods-calculater.debug.xcconfig */,
+				D78EFCA48DDA4FAF5BF12E4E /* Pods-calculater.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C3B09E461C282F88008A8A3C /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				C309E5EB1C26F7CA00569FB9 /* FMDatabase.m */,
+				C309E5EC1C26F7CA00569FB9 /* FMDatabaseAdditions.h */,
+				C309E5ED1C26F7CA00569FB9 /* FMDatabaseAdditions.m */,
+				C309E5EE1C26F7CA00569FB9 /* FMDatabasePool.h */,
+				C309E5EF1C26F7CA00569FB9 /* FMDatabasePool.m */,
+				C309E5F01C26F7CA00569FB9 /* FMDatabaseQueue.h */,
+				C309E5F11C26F7CA00569FB9 /* FMDatabaseQueue.m */,
+				C309E5F21C26F7CA00569FB9 /* FMDB.h */,
+				C309E5F31C26F7CA00569FB9 /* FMResultSet.h */,
+				C309E5F41C26F7CA00569FB9 /* FMResultSet.m */,
+				C309E5EA1C26F79C00569FB9 /* FMDatabase.h */,
+			);
+			name = fmdb;
+			sourceTree = "<group>";
+		};
+		C3B09E491C2835E1008A8A3C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C3B09E471C283444008A8A3C /* ModelBase.swift */,
+				C3B09E4A1C28360D008A8A3C /* ModelHistory.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		C3B09E4C1C2839F6008A8A3C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4093B0F61C1732E300991C5D /* Main.storyboard */,
+				4093B0FE1C1732E300991C5D /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		C3B09E4D1C283FAF008A8A3C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4093B0F41C1732E300991C5D /* ViewController.swift */,
+				C3C0A4D21C255341001A6501 /* TableViewController.swift */,
+				C3C0A4D41C257C21001A6501 /* TabBarController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +232,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4093B11A1C1732E400991C5D /* Build configuration list for PBXNativeTarget "calculater" */;
 			buildPhases = (
+				14371A4A9F943264163828DD /* Check Pods Manifest.lock */,
 				4093B0EB1C1732E300991C5D /* Sources */,
 				4093B0EC1C1732E300991C5D /* Frameworks */,
 				4093B0ED1C1732E300991C5D /* Resources */,
+				64C7DF29AACB66413185FE55 /* Embed Pods Frameworks */,
+				5CCC1ABABCDF3F0F0606A12C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -195,7 +295,7 @@
 				TargetAttributes = {
 					4093B0EE1C1732E300991C5D = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 2D8SYP44DJ;
+						DevelopmentTeam = 9USYRPTTDA;
 					};
 					4093B1051C1732E400991C5D = {
 						CreatedOnToolsVersion = 7.0;
@@ -254,6 +354,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14371A4A9F943264163828DD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5CCC1ABABCDF3F0F0606A12C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-calculater/Pods-calculater-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64C7DF29AACB66413185FE55 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-calculater/Pods-calculater-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4093B0EB1C1732E300991C5D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -261,7 +409,16 @@
 			files = (
 				4093B0F51C1732E300991C5D /* ViewController.swift in Sources */,
 				4093B0F31C1732E300991C5D /* AppDelegate.swift in Sources */,
+				C3B09E481C283444008A8A3C /* ModelBase.swift in Sources */,
 				4093B0FB1C1732E300991C5D /* calculater.xcdatamodeld in Sources */,
+				C3B09E4B1C28360D008A8A3C /* ModelHistory.swift in Sources */,
+				C309E5F51C26F7CA00569FB9 /* FMDatabase.m in Sources */,
+				C309E5F91C26F7CA00569FB9 /* FMResultSet.m in Sources */,
+				C3C0A4D51C257C21001A6501 /* TabBarController.swift in Sources */,
+				C309E5F71C26F7CA00569FB9 /* FMDatabasePool.m in Sources */,
+				C309E5F61C26F7CA00569FB9 /* FMDatabaseAdditions.m in Sources */,
+				C3C0A4D31C255341001A6501 /* TableViewController.swift in Sources */,
+				C309E5F81C26F7CA00569FB9 /* FMDatabaseQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,31 +556,37 @@
 		};
 		4093B11B1C1732E400991C5D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2B74F82285E95D7FF07832F /* Pods-calculater.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = calculater/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = kinako.calculater;
+				PRODUCT_BUNDLE_IDENTIFIER = yudozen.calculater;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "calculater/calculater-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		4093B11C1C1732E400991C5D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D78EFCA48DDA4FAF5BF12E4E /* Pods-calculater.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = calculater/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = kinako.calculater;
+				PRODUCT_BUNDLE_IDENTIFIER = yudozen.calculater;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "calculater/calculater-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -494,6 +657,7 @@
 				4093B11C1C1732E400991C5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4093B11D1C1732E400991C5D /* Build configuration list for PBXNativeTarget "calculaterTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +666,7 @@
 				4093B11F1C1732E400991C5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4093B1201C1732E400991C5D /* Build configuration list for PBXNativeTarget "calculaterUITests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +675,7 @@
 				4093B1221C1732E400991C5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
