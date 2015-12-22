@@ -15,7 +15,9 @@ class ModelHistory : ModelBase {
         return Singleton.instance
     }
     
-    var db : FMDatabase!
+    var db: FMDatabase!
+    var lastTimestamp: NSTimeInterval = 0
+    var outputFormat = NSDateFormatter()
     
     override init(){
         super.init()
@@ -26,17 +28,23 @@ class ModelHistory : ModelBase {
         db = FMDatabase(path: path)
         db.open()
         db.executeStatements("create table if not exists CalcHistory (id integer primary key autoincrement, note text, created_at integer)")
+        
+        outputFormat = NSDateFormatter()
+        outputFormat.locale = NSLocale(localeIdentifier: "ja_JP")
+        outputFormat.dateFormat = "[yy/MM/dd HH:mm:ss]"
     }
     
     deinit {
         db.close()
     }
     
-    func getList(params: Dictionary<String,AnyObject>?){
+    func getList(){
+        let resultSet = db.executeQuery("select * from CalcHistory where created_at > :lastTimestamp order by created_at asc", withParameterDictionary: ["lastTimestamp": lastTimestamp])
+        lastTimestamp = NSDate().timeIntervalSince1970
         
-        let resultSet = db.executeQuery("select * from CalcHistory", withParameterDictionary: nil)
         while resultSet.next() {
-            self.add(["item": resultSet.stringForColumn("note")])
+            let date = NSDate(timeIntervalSince1970:Double(resultSet.stringForColumn("created_at"))!)
+            self.add(["item": "\(outputFormat.stringFromDate(date))  \(resultSet.stringForColumn("note"))"])
         }
     }
 }

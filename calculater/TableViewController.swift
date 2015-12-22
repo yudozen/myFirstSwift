@@ -22,20 +22,17 @@ class TableViewController: UITableViewController{
         return cell
     }
     
+    override func viewDidAppear(animated: Bool) {
+        ModelHistory.sharedInstance.getList()
+        self.tableView.reloadData()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.contentInset = UIEdgeInsetsMake(15.0, 0, 0, 0)
-        
-        ModelHistory.sharedInstance.addObserver(self, forKeyPath: "list", options: .New, context: nil)
-        ModelHistory.sharedInstance.getList(Dictionary<String,AnyObject>())
-        
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-    }
-    
-    override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
-        self.tableView.reloadData()
     }
 }

@@ -26,6 +26,6 @@ class ModelBase: NSObject {
     }
     
     func add(data: Dictionary<String,AnyObject>) {
-        self.list.insert(data, atIndex: self.list.count)
+        self.list.insert(data, atIndex: 0)
     }
 }

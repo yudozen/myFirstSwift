@@ -48,8 +48,8 @@ class ViewController: UIViewController {
         screen.text = "\(result)"
         
         let history = "\(firstNumber) \(operation) \(secondNumber) = \(result)"
-        ModelHistory.sharedInstance.add(["item": history])
-    }
+        ModelHistory.sharedInstance.db.executeUpdate("insert into CalcHistory (note, created_at) values (:note, :created_at)", withParameterDictionary: ["note": history, "created_at": NSDate().timeIntervalSince1970])
+ }
     
     @IBAction func clear(sender: AnyObject) {
         firstNumber = 0
