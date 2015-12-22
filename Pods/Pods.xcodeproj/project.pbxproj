@@ -104,6 +104,7 @@
 		BA1D65BDD176DE6E6E5612E2724FF797 /* sqlite3.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = sqlite3.c; path = "sqlite-amalgamation-3090200/sqlite3.c"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C31B4BDF1C29A0EA00890612 /* Podfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Podfile.lock; path = ../Podfile.lock; sourceTree = "<group>"; };
+		C3EFF1B71C29A16900645C98 /* Manifest.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Manifest.lock; sourceTree = "<group>"; };
 		CAAC6D618E05818DF6952D53ADC84DE4 /* Pods-calculater-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-calculater-umbrella.h"; sourceTree = "<group>"; };
 		CCC822304100BF7D59F07EA91C89CC5A /* SQLCipher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLCipher-dummy.m"; sourceTree = "<group>"; };
 		D0A103EC972FA1D995F79F8BB89AB1AB /* FMDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-prefix.pch"; sourceTree = "<group>"; };
@@ -157,6 +158,7 @@
 		00313920A4F897679E18E481C5BFE448 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				C3EFF1B71C29A16900645C98 /* Manifest.lock */,
 				21CB152EE847F4FC0D40318D9196AD0A /* FMDB */,
 				FC4A9E5AB98DB4B4694814B8214A404A /* SQLCipher */,
 				2DAE699F698C296B10B36AC00416BB3E /* sqlite3 */,
